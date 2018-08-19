@@ -1,0 +1,14 @@
+.card-container{
+    /* margin: auto;
+    width: 90%;
+    height: 101%; */
+    display:flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.form-container{
+    margin-top: 25px;
+    text-align: center;
+}

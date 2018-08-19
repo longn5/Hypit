@@ -1,0 +1,24 @@
+.container{
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.term-input{
+    display: inline-block !important;
+}
+
+.submit-button{
+    margin-left: 25px !important;
+}
+
+.input-label{
+    left: auto !important
+}
+
+.input-container{
+    margin: 0px 25px;
+}
+
+.input-active{
+    width: 250px;
+}
