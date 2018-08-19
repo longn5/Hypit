@@ -3,11 +3,12 @@
 const express = require('express');
 const yelp = require('yelp-fusion');
 const bodyParser = require('body-parser');
-const mustache = require('mustache');
-const fs = require('fs');
+const config = require('./config.js'); //gets key from config file
+// const mustache = require('mustache');
+// const fs = require('fs');
 
 const app = express();
-const client = yelp.client('');
+const client = yelp.client(config.yelp_key);
 
 var jsonObj;
 var business;

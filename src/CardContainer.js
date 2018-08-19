@@ -7,7 +7,7 @@ class CardContainer extends Component {
 
     state = { business: [] }
 
-    //gets json from node server
+    //gets json from node server when component mounts at start (this only runs once)
     componentDidMount() {
         var search = {
             term: 'food',
@@ -28,6 +28,7 @@ class CardContainer extends Component {
             .then(business => this.setState({ business }))
     }
 
+    //gets call from
     formCallBack = () => {
         fetch('/business')
             .then(res => res.json())
@@ -62,7 +63,9 @@ class CardContainer extends Component {
                     cards.push(<BizCard
                         name={this.state.business[j + arrayMarker].name}
                         phone={this.state.business[j + arrayMarker].phone}
-                        image={this.state.business[j + arrayMarker].image_url} />);
+                        image={this.state.business[j + arrayMarker].image_url}
+                        id={this.state.business[j + arrayMarker].id}
+                    />);
             }
             console.log("after col count");
             console.log(colCount);

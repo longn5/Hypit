@@ -12,6 +12,13 @@ import './BizCard.css';
 
 class BizCard extends Component {
 
+    constructor(props){
+        super(props);
+        this.state = {
+            localid: props.id
+        }
+    }
+
     styles = {
         card: {
             minWidth: 275,
@@ -26,6 +33,8 @@ class BizCard extends Component {
     }
 
     render() {
+        console.log("id is: ");
+        console.log(this.state.localid);
         return (
             <Card className="card">
                 <CardMedia
@@ -37,7 +46,8 @@ class BizCard extends Component {
                         {this.props.name}
                     </Typography>
                     <Typography component="p">
-                        {this.props.phone}
+                        {this.props.id}
+                        {/* {this.props.phone} */}
                     </Typography>
                 </CardContent>
                 <CardActions>
