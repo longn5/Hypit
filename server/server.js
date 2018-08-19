@@ -7,7 +7,7 @@ const mustache = require('mustache');
 const fs = require('fs');
 
 const app = express();
-const client = yelp.client('0y-17qJ5PSTP_VQnERh5dGK7pHyQ6GUC2TXgxI7j3qv7Y6gp24rCkYu2TCpNQ0EZ0JVOiLvXxCqwMTOXLRGlbfTHwdEVVPm1wIh1nlsYrQYRcDFBwJifxmFXiulkW3Yx');
+const client = yelp.client('');
 
 var jsonObj;
 var business;
